@@ -1,0 +1,22 @@
+── STATION-LEVEL MODEL WINNER SUMMARY ──
+
+Stations compared: 15
+RandomForest wins  : 7  (47%)
+SARIMA wins      : 8  (53%)
+
+Per-station breakdown:
+    12  Malet Street, Bloomsbury                    SARIMA=2.856  RandomForest=2.897  → SARIMA
+    14  Argyle Street, Kings Cross                  SARIMA=17.518  RandomForest=15.248  → RandomForest
+    66  Holborn Circus, Holborn                     SARIMA=6.921  RandomForest=5.759  → RandomForest
+    73  Old Street Station, St. Luke's              SARIMA=2.860  RandomForest=2.751  → RandomForest
+   101  Queen Street 1, Bank                        SARIMA=2.478  RandomForest=2.788  → SARIMA
+   132  Bethnal Green Road, Shoreditch              SARIMA=2.554  RandomForest=2.642  → SARIMA
+   154  Waterloo Station 3, Waterloo                SARIMA=21.407  RandomForest=19.142  → RandomForest
+   191  Hyde Park Corner, Hyde Park                 SARIMA=2.750  RandomForest=2.769  → SARIMA
+   194  Hop Exchange, The Borough                   SARIMA=3.835  RandomForest=4.000  → SARIMA
+   215  Moorfields, Moorgate                        SARIMA=3.129  RandomForest=2.869  → RandomForest
+   251  Brushfield Street, Liverpool Street         SARIMA=3.835  RandomForest=3.647  → RandomForest
+   341  Craven Street, Strand                       SARIMA=2.243  RandomForest=2.349  → SARIMA
+   361  Waterloo Station 2, Waterloo                SARIMA=8.319  RandomForest=9.700  → SARIMA
+   427  Cheapside, Bank                             SARIMA=4.545  RandomForest=4.375  → RandomForest
+   732  Duke Street Hill, London Bridge             SARIMA=2.359  RandomForest=2.366  → SARIMA

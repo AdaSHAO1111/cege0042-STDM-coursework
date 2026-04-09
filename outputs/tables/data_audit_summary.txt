@@ -1,0 +1,72 @@
+============================================================
+DATA AUDIT SUMMARY
+============================================================
+
+Total journey rows loaded: 1,267,317
+Unique Start Station IDs : 785
+Unique End Station IDs   : 785
+Unique station IDs (union): 785
+
+Datetime range:
+  Start Date min: 2018-01-03 00:01:00
+  Start Date max: 2018-03-06 23:54:00
+  End Date min  : 2018-01-03 00:08:00
+  End Date max  : 2018-03-06 23:59:00
+
+Missing values per column:
+  (none)
+
+Station metadata rows: 800
+Stations matched to metadata: 750 / 785
+
+⚠ 35 journey station IDs have NO metadata match:
+  [27, 32, 82, 87, 99, 100, 108, 122, 159, 174, 252, 270, 305, 339, 343, 347, 410, 420, 492, 512, 526, 535, 540, 566, 601, 614, 634, 637, 639, 777, 781, 794, 800, 806, 817]
+
+  50 metadata stations have no journeys in this period
+  (these are likely newer/removed stations — not a problem)
+
+============================================================
+
+── BALANCED PANEL QA ──────────────────────────────────────
+Weekly CSV files loaded   : 10
+Total journey rows loaded : 1,336,148
+Raw datetime range (before any trim):
+  Start Date : 2017-12-27 00:02:00  →  2018-03-06 23:54:00
+  End Date   : 2017-12-27 00:05:00  →  2018-03-06 23:59:00
+Trim applied             : Start Date >= 2018-01-03
+Rows after trim          : 1,267,317  (dropped 68,831)
+Analysis datetime range (after trim):
+  Start Date : 2018-01-03 00:01:00  →  2018-03-06 23:54:00
+  End Date   : 2018-01-03 00:08:00  →  2018-03-06 23:59:00
+Panel hour range         : 2018-01-03 00:00:00 → 2018-03-06 23:00:00
+Unique journey stations  : 785
+Matched metadata stations: 750 / 785
+Unmatched journey stations: 35  [27, 32, 82, 87, 99, 100, 108, 122, 159, 174, 252, 270, 305, 339, 343, 347, 410, 420, 492, 512, 526, 535, 540, 566, 601, 614, 634, 637, 639, 777, 781, 794, 800, 806, 817]
+
+Unique stations          : 785
+Unique hourly timestamps : 1512
+Expected balanced rows   : 1,186,920  (785 × 1512)
+Actual balanced rows     : 1,186,920
+Balanced check           : PASS
+Zero-activity station-hrs: 538,808 (45.4%)
+Missing departures       : 0
+Missing arrivals         : 0
+
+── GLOBAL QA ─────────────────────────────────────────────
+Total departures         : 1,267,317
+Total arrivals           : 1,267,317
+Total net_flow           : 0
+Duplicate panel rows     : 0
+dep == arr == journey rows: PASS  (1,267,317 vs 1,267,317 vs 1,267,317)
+net_flow sums to zero    : PASS  (got 0)
+No duplicate rows        : PASS
+
+── NET_FLOW SPOT CHECK (5 random rows, seed=42) ──────────
+  station    9  2018-01-12 22:00:00  dep=0  arr=0  net=0  → OK
+  station  167  2018-01-13 07:00:00  dep=0  arr=1  net=-1  → OK
+  station  437  2018-01-31 06:00:00  dep=0  arr=0  net=0  → OK
+  station  484  2018-01-30 00:00:00  dep=0  arr=0  net=0  → OK
+  station  691  2018-02-26 07:00:00  dep=0  arr=0  net=0  → OK
+  Overall: ALL PASSED ✓
+
+============================================================

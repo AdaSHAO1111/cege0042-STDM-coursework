@@ -1,0 +1,25 @@
+══ MODELLING RESULTS SUMMARY (10-week dataset) ══
+
+Target: one-hour-ahead station-level net_flow (dep − arr)
+Study period: 2018-01-03 to 2018-03-06
+Train: 2018-01-03 to 2018-02-20 (7 weeks)  |  Test: 2018-02-21 to 2018-03-06 (2 weeks)  |  263,760 test rows
+
+Model 1: SARIMA(1,0,1)(1,0,1)[24]
+  Stations: 15 representative
+  Test RMSE: 8.1211
+  Test MAE:  3.0557
+
+Model 2: RandomForest (global, all stations)
+  Features: 13 (hour, dow, is_weekend, nf_lag_1, nf_lag_2, nf_lag_3, nf_lag_24, nf_lag_48, dep_lag_1, arr_lag_1, dep_lag_24, arr_lag_24, neighbour_nf_lag1_mean)
+  Test RMSE (all):    1.8886
+  Test MAE  (all):    0.8818
+  Test RMSE (subset): 7.4492
+  Test MAE  (subset): 2.5553
+
+── LIKE-FOR-LIKE COMPARISON NOTE ──
+
+SARIMA is fitted on 15 representative stations only.
+RandomForest is trained globally on all stations.
+The 'SARIMA subset' row restricts the tree model to the
+same 15 stations for a fair apples-to-apples comparison.
+The 'all stations' row shows RandomForest on all 785 stations.

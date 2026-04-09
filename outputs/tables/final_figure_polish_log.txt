@@ -1,0 +1,62 @@
+── FINAL FIGURE POLISH LOG ────────────────────────────────
+Generated: 2026-04-08 23:02
+
+── CHANGES ──
+
+  dow_hour_heatmap.png
+    Added study-period subtitle; refined colour-bar label
+
+  weekday_weekend_profile.png
+    Added footnote on net-flow panel cautioning about cross-hour artefact; asterisk on panel (c) title
+
+  map_am_peak_net_flow.png
+    Reduced labels from 5+5 to 4+4; added study-period to subtitle
+
+  map_pm_peak_net_flow.png
+    Reduced labels from 5+5 to 4+4; added study-period to subtitle; matched AM map style exactly
+
+  model_comparison_bar.png
+    All-stations row greyed out + labelled '(reference only)'; bracket annotation marking fair comparison; italic footnote explaining scope difference
+
+  feature_importance.png
+    Trimmed to top-10 features; compact layout; importance order derived from a fast proxy RF (same features/split)
+
+  forecast_ts_154.png
+    Actual line thicker (1.1); SARIMA dashed; improved legend placement; sharper dpi
+
+  station_rmse_scatter.png
+    Labels reduced from 15 to 7 key stations; added region labels ('SARIMA better' / 'RF better'); offset text to avoid overlaps; parity line relabelled
+
+  station_timeseries_acf.png
+    Regenerated at higher dpi (250); no structural change
+
+── UNCHANGED ──
+
+  forecast_ts_194.png       (appendix quality, no change needed)
+  residual_by_hour.png      (appendix quality, no change needed)
+  hourly_profile.png        (appendix, no change)
+  appendix_daily_net_flow.png  (appendix, no change)
+  appendix_station_map_overall.png  (appendix, no change)
+
+── RECOMMENDED FOR MAIN REPORT (5 figures) ──
+
+  1. dow_hour_heatmap.png           — temporal pattern overview
+  2. weekday_weekend_profile.png    — weekday vs weekend regime
+  3. map_am_peak_net_flow.png       — spatial AM commuter flow
+  4. map_pm_peak_net_flow.png       — spatial PM commuter flow (shared scale)
+  5. model_comparison_bar.png       — headline model performance
+
+── RECOMMENDED FOR REPORT (modelling section, pick 2–3) ──
+
+  6. forecast_ts_154.png            — actual vs predicted overlay
+  7. feature_importance.png         — what drives RF predictions
+  8. station_rmse_scatter.png       — per-station model comparison
+
+── APPENDIX ONLY ──
+
+  A1. station_timeseries_acf.png    — ACF/PACF diagnostic
+  A2. forecast_ts_194.png           — second station overlay
+  A3. residual_by_hour.png          — residual diagnostics
+  A4. hourly_profile.png            — basic hourly profile
+  A5. appendix_daily_net_flow.png   — daily conservation check
+  A6. appendix_station_map_overall.png — overall spatial map

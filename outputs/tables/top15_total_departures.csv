@@ -1,0 +1,16 @@
+rank,station_id,station_name,lat,lon,total_departures
+1,14,"Argyle Street, Kings Cross",51.529416,-0.123944,14439
+2,154,"Waterloo Station 3, Waterloo",51.503791,-0.112824,13917
+3,374,"Waterloo Station 1, Waterloo",51.504027,-0.113864,8686
+4,101,"Queen Street 1, Bank",51.511553,-0.09294,6410
+5,217,"Wormwood Street, Liverpool Street",51.516154,-0.082422,6128
+6,194,"Hop Exchange, The Borough",51.504627,-0.091773,5932
+7,191,"Hyde Park Corner, Hyde Park",51.503117,-0.15352,5805
+8,55,"Finsbury Circus, Liverpool Street",51.517075,-0.086685,5609
+9,361,"Waterloo Station 2, Waterloo",51.503919,-0.113426,5596
+10,104,"Crosswall, Tower",51.511594,-0.077121,5468
+11,251,"Brushfield Street, Liverpool Street",51.518908,-0.079249,5442
+12,427,"Cheapside, Bank",51.51397,-0.09294,5295
+13,132,"Bethnal Green Road, Shoreditch",51.523648,-0.074754,5126
+14,732,"Duke Street Hill, London Bridge",51.506304,-0.087262,5019
+15,73,"Old Street Station, St. Luke's",51.525615,-0.088532,4945
